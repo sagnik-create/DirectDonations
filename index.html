@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Donation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Direct Donation Platform</h1>
+        <div class="input-group">
+            <input type="text" id="beneficiaryAddress" placeholder="Enter Beneficiary Address">
+            <input type="number" id="donationAmount" placeholder="Amount in ETH">
+            <button onclick="donate()">Donate</button>
+        </div>
+        <div class="status" id="statusMessage"></div>
+        <div class="beneficiary-list">
+            <h2>Beneficiary Details</h2>
+            <input type="text" id="searchAddress" placeholder="Enter Address to Search">
+            <button onclick="getBeneficiaryDetails()">Search</button>
+            <div id="beneficiaryInfo"></div>
+        </div>
+    </div>
+</body>
+</html>
